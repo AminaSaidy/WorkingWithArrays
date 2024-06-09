@@ -52,6 +52,31 @@ public class ArraysActions {
         return sum;
     }
 
+    public static int AddEvenIndex(int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < 10; i++) {
+            if (i % 2 == 0) {
+                sum += arr[i];
+            }
+        }
+        return sum;
+    }
+
+    public static int AddOddIndex(int[] arr) {
+        int sum = 0;
+        for (int i = 0; i < 10; i++) {
+            if (i % 2 != 0) {
+                sum += arr[i];
+            }
+        }
+        return sum;
+    }
+
+    public static int SubtractEvenOddIndexes(int[] arr) {
+        int difference = AddEvenIndex(arr) - AddOddIndex(arr);
+        return difference;
+    }
+
     public static int CountZeros(int[] arr) {
         int count = 0;
         for (int i = 0; i < 10; i++) {
