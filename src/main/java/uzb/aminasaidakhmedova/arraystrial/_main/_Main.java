@@ -13,7 +13,7 @@ public class _Main {
         System.out.println("Amount of even numbers: "+ ArraysActions.CountEvenNumbers(arr));
         System.out.println("Amount of odd numbers: "+ ArraysActions.CountOddNumbers(arr));
         System.out.println("Amount of prime numbers: "+ ArraysActions.CountPrimeNumbers(arr));
-        System.out.println("Sum of all numbers numbers: "+ ArraysActions.CountEvenNumbers(arr));
+        System.out.println("Sum of all numbers numbers: "+ ArraysActions.AddAllNumbers(arr));
         System.out.println("Difference between sums of numbers with even indexes and with odd indexes: "+ ArraysActions.CountEvenNumbers(arr));
         System.out.println("Amount of zeros: "+ ArraysActions.CountEvenNumbers(arr));
     }
