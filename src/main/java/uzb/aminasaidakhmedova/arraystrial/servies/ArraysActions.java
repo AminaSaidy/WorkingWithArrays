@@ -52,6 +52,16 @@ public class ArraysActions {
         return sum;
     }
 
+    public static int CountZeros(int[] arr) {
+        int count = 0;
+        for (int i = 0; i < 10; i++) {
+            if (arr[i] == 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
 
 }
 
