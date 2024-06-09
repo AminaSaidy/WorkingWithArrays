@@ -2,7 +2,7 @@ package uzb.aminasaidakhmedova.arraystrial.servies;
 
 public class ArraysActions {
 
-    public static int CheckEvenNumbers(int[] arr) {
+    public static int CountEvenNumbers(int[] arr) {
         int count = 0;
         for (int i = 0; i < 10; i++) {
             if (arr[i] % 2 == 0) {
@@ -12,7 +12,7 @@ public class ArraysActions {
         return count;
     }
 
-    public static int CheckOddNumbers(int[] arr) {
+    public static int CountOddNumbers(int[] arr) {
         int count = 0;
         for (int i = 0; i < 10; i++) {
             if (arr[i] % 2 == 1) {
@@ -22,4 +22,29 @@ public class ArraysActions {
         return count;
     }
 
+    public static boolean CheckIfPrime(int num) {
+        if (num < 1) {
+            return false;
+        }
+        for (int i = 2; i < num; i++) {
+            if (num % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public static int CountPrimeNumbers(int[] arr) {
+        int count = 0;
+        for (int i = 0; i < 10; i++) {
+            if (CheckIfPrime(arr[i])) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+
 }
+
+
